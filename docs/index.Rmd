@@ -25,7 +25,7 @@ class: center, middle, title-slide, inverse
 
 ### <https://mrchypark.github.io/apiR>
 
-#### [피드백하기](https://github.com/mrchypark/apiR/issues/new)
+#### [[github]](https://github.com/mrchypark/apiR) [[pdf버전]](https://github.com/mrchypark/apiR/blob/master/docs/apiR.pdf) [[의견 및 오류 신고]](https://github.com/mrchypark/apiR/issues/new)
 
 ### 박찬엽
 
