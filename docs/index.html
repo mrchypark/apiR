@@ -28,9 +28,9 @@ class: center, middle, title-slide, inverse
 ---
 class: inverse
 
-## 발표자소개
+## 발표자 소개
 .center[
-  #### 질문 / 상담 / 잡담 대환영!
+  ### .pen-p[질문 / 상담 / 잡담 대환영!]
 ]
 
 .pull-left[
@@ -44,7 +44,8 @@ class: inverse
 ### 박찬엽    
 - 서울도시가스 선행연구팀 연구원
   * 챗봇 엔진 개발 및 서버 구축
-- 패스트 캠퍼스 [중급R프로그래밍](http://www.fastcampus.co.kr/data_camp_dabrp/) 강의
+- 패스트 캠퍼스 데이터 분석 R 강의
+  * [데이터 분석을 위한 중급 R 프로그래밍](http://www.fastcampus.co.kr/data_camp_dabrp/)
 - R 네이버 뉴스 크롤러 [N2H4](https://github.com/forkonlp/N2H4) 관리자
   * [ForkonLP](https://forkonlp.github.io/) 프로젝트
 - .yellow[**KAKAO**]@[알코홀릭](http://pf.kakao.com/_RXANd) R 질문방 운영
@@ -68,6 +69,52 @@ class: center, middle, title-slide, inverse
 ---
 class: center, middle, title-slide, inverse
 
+  
+## 의사 결정을 위한 데이터 분석 프로젝트의 단계
+
+### [데이터 확보][101] - [전처리][102] - [모델링][103] - [시각화][104] - [문서화][105]
+
+[101]: https://mrchypark.github.io/getWebR/
+[102]: https://mrchypark.github.io/dabrp_classnote3/class4
+[103]: https://mrchypark.github.io/tqk_docs/tidyquant-with-tqk.html
+[104]: https://mrchypark.github.io/dabrp_classnote3/class5
+[105]: https://mrchypark.github.io/dabrp_classnote2/class7
+---
+class: center, middle, title-slide, inverse
+
+  
+## 머신러닝 프로젝트의 단계
+
+### .gray[데이터 확보] - .gray[전처리] - .gray[모델링] - .yellow[제품화]
+
+---
+class: inverse
+
+## 제품화
+
+머신러닝 프로젝트의 결과물을 서비스에 활용하는 것 또한 많은 노력이 필요함
+
+![](http://www.mattford.com/blog/wp-content/uploads/2015/02/is-ford-discontinuing-the-v8-engine-2017-gt-raptor-mustang-ecoboost-v6-horsepower-output-epa-economy.jpg)
+
+---
+class: center, middle, title-slide, inverse
+
+## 제품화하는 방법
+
+---
+class: inverse
+
+## 서버 구조의 변화
+.pull-left[
+![](monolithic.png)
+]
+.pull-right[
+![](msa.png)
+]
+
+---
+class: center, middle, title-slide, inverse
+
 ## api 서버란?
 
 ![](http://thefoxlab.com/upload/technology_icon/API-Development.png)
@@ -75,6 +122,7 @@ class: center, middle, title-slide, inverse
 ---
 class: inverse
 
+nodejs+r-script
 reticulate+flask
 openFaaS
 httpuv + was()
