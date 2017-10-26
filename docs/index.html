@@ -99,12 +99,35 @@ class: inverse
 ---
 class: center, middle, title-slide, inverse
 
-## 제품화하는 방법
+## 제품화하는데 노력이 덜 드는 방법은 없을까
 
 ---
 class: inverse
 
 ![](https://github.com/mrchypark/apiR/blob/master/docs/img/sa.png?raw=true)
+
+---
+class: inverse
+
+## 마이크로 서비스형 설계
+
+.pull-left[
+장점
+
+1. 기능 단위로 완결되어 개발 단위가 작음
+1. 개별 서비스간의 의존성이 적어 유연함
+1. 단일 모듈 장애시 전체 서비스의 영향이 적음
+
+단점
+
+1. 개별 서비스의 테스트 뿐만 아니라 전체 테스트가 필요
+1. 서비스간 인터페이스 정의와 관리 이슈가 발생
+1. 전체 서비스의 로그 관리를 위한 솔루션 필요
+]
+.pull-right[
+![](https://github.com/mrchypark/apiR/blob/master/docs/img/msa.png?raw=true)
+]
+
 
 ---
 class: inverse
