@@ -457,11 +457,31 @@ class: center, middle, title-slide, inverse
 ---
 class: center, middle, title-slide, inverse 
 
-## 초기 [삽질][flaskr]을 대신해 주셨습니다!
+## [lumiamitie][flaskr]님께서 초기 .yellow[삽질]을 대신해 주셨습니다!
+
+<http://lumiamitie.github.io/r/flask-on-r/>
 
 ![](https://raw.githubusercontent.com/mrchypark/apiR/master/docs/img/flaskr.png)
 
 [flaskr]: http://lumiamitie.github.io/r/flask-on-r/
+
+---
+class: inverse
+
+## GET 서버 예시
+
+```{}
+library('reticulate')
+
+flask = import('flask')
+app = flask$Flask('__main__')
+
+app$route('/')({
+  index = function() {return('Hello R user Conference!')}
+})
+
+app$run()
+```
 
 ---
 class: center, middle, title-slide, inverse
@@ -469,6 +489,43 @@ class: center, middle, title-slide, inverse
 # 시연
 
 ![](https://raw.githubusercontent.com/mrchypark/apiR/master/docs/img/chatbot.png)
+
+---
+class: inverse
+
+## flask on r 
+
+.pull-left[
+### 장점
+
+- flask의 풍부한 자료를 활용
+
+![](http://mblogthumb3.phinf.naver.net/20151130_130/jklcompany21_1448871365584EQsUP_PNG/%C5%E4%B3%A2_%BD%C5%B3%AD%B4%D9.png?type=w2)
+]
+.pull-right[
+### 단점
+
+- python 도 알아야 함
+
+![](http://mblogthumb2.phinf.naver.net/20140408_273/kkyy20455_1396957263255wQqIn_PNG/9.png?type=w2)
+]
+
+---
+class: center, middle, title-slide, inverse
+
+## 더 좋은 방법은 없을까
+
+---
+class: inverse
+
+![](https://github.com/mrchypark/apiR/blob/master/docs/img/faas.png?raw=true)
+
+---
+class: center, middle, title-slide, inverse
+
+## 서버도 몰라도 됨
+
+![](https://github.com/mrchypark/apiR/blob/master/docs/img/mstof.png?raw=true)
 
 ---
 class: center, middle, title-slide, inverse
@@ -483,18 +540,6 @@ class: center, middle, title-slide, inverse
 class: center, middle, title-slide, inverse
 
 ![](https://camo.githubusercontent.com/08bc7c0c4f882ef5eadaed797388b27b1a3ca056/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f4446726b46344e586f41414a774e322e6a7067)
-
----
-class: inverse
-
-![](https://github.com/mrchypark/apiR/blob/master/docs/img/faas.png?raw=true)
-
----
-class: center, middle, title-slide, inverse
-
-## 서버도 몰라도 됨
-
-![](https://github.com/mrchypark/apiR/blob/master/docs/img/mstof.png?raw=true)
 
 ---
 class: inverse 
@@ -554,9 +599,17 @@ class: center, middle, title-slide, inverse
 ## .pen-p[는 사랑입니다.]
 
 ---
+class: center, middle, title-slide, inverse
 
 ## R로 api 서버를 만드는 마지막 방법!
 
+---
+class: center, middle, title-slide, inverse
+
+## 저한테 연락하시면 됩니다.
+.center[
+  ![](https://item.kakaocdn.net/do/d0195d9f27e6eab9548b7ce619b07c54617ea012db208c18f6e83b1a90a7baa7)
+]
 ---
 class: center, middle, title-slide, inverse
 
