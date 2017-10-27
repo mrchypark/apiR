@@ -467,7 +467,16 @@ class: center, middle, title-slide, inverse
 ---
 class: center, middle, title-slide, inverse
 
+## R로 api 서버를 만드는 세 번째 방법!
 
+[![](https://camo.githubusercontent.com/cf01eefb5b6905f3774376d6d1ed55b8f052d211/68747470733a2f2f626c6f672e616c6578656c6c69732e696f2f636f6e74656e742f696d616765732f323031372f30382f666161735f736964652e706e67)][faas]
+
+[faas]: https://github.com/openfaas/faas
+
+---
+class: center, middle, title-slide, inverse
+
+![](https://camo.githubusercontent.com/08bc7c0c4f882ef5eadaed797388b27b1a3ca056/68747470733a2f2f7062732e7477696d672e636f6d2f6d656469612f4446726b46344e586f41414a774e322e6a7067)
 
 ---
 class: inverse
@@ -477,11 +486,32 @@ class: inverse
 ---
 class: center, middle, title-slide, inverse
 
+## 서버도 몰라도 됨
+
 ![](https://github.com/mrchypark/apiR/blob/master/docs/img/mstof.png?raw=true)
 
 ---
-class: center, middle, title-slide, inverse 
+class: inverse 
 
+## 표준 입출력으로 함수 작성
+
+```{}
+## 표준 입력을 받아 line 객체로 저장
+f <- file("stdin")
+open(f)
+line<-readLines(f, n=1, warn = FALSE)
+
+## 데이터를 처리하여 result  객체로 저장
+result<-paste0("Hi ", line)
+
+## 표준 출력으로 결과 전달
+write(result, stderr())
+```
+
+---
+class: center, middle, title-slide, inverse
+
+![](https://github.com/mrchypark/apiR/blob/master/docs/img/rfaas.png?raw=true)
 
 ---
 class: center, middle, title-slide, inverse
