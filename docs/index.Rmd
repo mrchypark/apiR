@@ -467,15 +467,17 @@ class: center, middle, title-slide, inverse
 ---
 class: center, middle, title-slide, inverse
 
----
-class: inverse
 
-![](https://github.com/mrchypark/apiR/blob/master/docs/img/f.png?raw=true)
 
 ---
 class: inverse
 
 ![](https://github.com/mrchypark/apiR/blob/master/docs/img/faas.png?raw=true)
+
+---
+class: center, middle, title-slide, inverse
+
+![](https://github.com/mrchypark/apiR/blob/master/docs/img/mstof.png?raw=true)
 
 ---
 class: center, middle, title-slide, inverse 
