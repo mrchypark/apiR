@@ -19,7 +19,7 @@ class: center, middle, title-slide, inverse
 
 ### &lt;https://mrchypark.github.io/apiR&gt;
 
-#### [[github]](https://github.com/mrchypark/apiR) [[pdf버전]](https://github.com/mrchypark/apiR/blob/master/docs/apiR.pdf) [[문의하기]](http://pf.kakao.com/_RXANd) [[의견 및 오류 신고]](https://github.com/mrchypark/apiR/issues/new)
+#### [[pdf버전]](https://github.com/mrchypark/apiR/blob/master/docs/apiR.pdf) [[문의하기]](http://pf.kakao.com/_RXANd) [[의견 및 오류 신고]](https://github.com/mrchypark/apiR/issues/new)
 
 ### 박찬엽
 
@@ -261,6 +261,7 @@ content(GET(url=target))
 
 [get]: https://mrchypark.github.io/r/httr/api/%ED%95%9C%EA%B8%80-%EB%9D%84%EC%96%B4%EC%93%B0%EA%B8%B0-API-%EC%9D%B4%EC%9A%A9%ED%95%98%EA%B8%B0.html
 [httr]: https://github.com/r-lib/httr
+
 ---
 class: center, middle, title-slide, inverse 
 
@@ -437,6 +438,11 @@ content(POST(url, body=body),"text")
 ---
 class: center, middle, title-slide, inverse 
 
+## .yellow[POST 서버]를 만들었다!
+
+---
+class: center, middle, title-slide, inverse 
+
 ## R의 서버 개발 패키지들
 
 ### [httpuv][httpuv], [Rserve][Rserve], [jug][jug], [plumber][plumber], [fiery][fiery]
@@ -457,7 +463,7 @@ class: center, middle, title-slide, inverse
 
 ## 오픈소스 사용시 중요한 점.
 
-### 사용자층이 넓을 것, .yellow[설명서가 충실할 것], 버전이 1.X.X 이상일 것
+### 사용자층이 넓을 것, .yellow[설명서가 충실할 것], 버전이 1.X.X 이상일 것 등등
 
 ---
 class: center, middle, title-slide, inverse 
@@ -566,9 +572,36 @@ write(result, stderr())
 ```
 
 ---
-class: center, middle, title-slide, inverse
+class: inverse
+
+## 친절한 [예시](https://github.com/openfaas/faas/tree/master/sample-functions/BaseFunctions/R)
 
 ![](https://github.com/mrchypark/apiR/blob/master/docs/img/rfaas.png?raw=true)
+
+---
+class: inverse
+
+## 서버는 몰라도
+
+[docker](https://www.docker.com/)를 좀 알면 편합니다.
+
+```{}
+FROM artemklevtsov/r-alpine:latest
+
+ADD https://github.com/openfaas/faas/releases/download/0.6.1/fwatchdog /usr/bin
+RUN chmod +x /usr/bin/fwatchdog
+
+WORKDIR /root/
+
+COPY handler.R .
+
+ENV fprocess="Rscript handler.R"
+
+HEALTHCHECK --interval=1s CMD [ -e /tmp/.lock ] || exit 1
+
+CMD ["fwatchdog"]
+```
+
 
 ---
 class: center, middle, title-slide, inverse
@@ -578,12 +611,16 @@ class: center, middle, title-slide, inverse
 ## .pen-p[는 사랑입니다.]
 
 ---
+
+## R로 api 서버를 만드는 마지막 방법!
+
+---
 class: center, middle, title-slide, inverse
 
 # 끝!
 ### &lt;https://mrchypark.github.io/apiR&gt;
 
-#### [[github]](https://github.com/mrchypark/apiR) [[pdf버전]](https://github.com/mrchypark/apiR/blob/master/docs/apiR.pdf) [[문의하기]](http://pf.kakao.com/_RXANd) [[의견 및 오류 신고]](https://github.com/mrchypark/apiR/issues/new)
+#### [[pdf버전]](https://github.com/mrchypark/apiR/blob/master/docs/apiR.pdf) [[문의하기]](http://pf.kakao.com/_RXANd) [[의견 및 오류 신고]](https://github.com/mrchypark/apiR/issues/new)
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
