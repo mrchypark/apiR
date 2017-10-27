@@ -199,8 +199,16 @@ class: inverse
 
 브라우저에서 주소를 입력하고 엔터를 치는 것!
 
-![](https://github.com/mrchypark/apiR/blob/master/docs/img/adressenter.png?raw=true)
+![](https://github.com/mrchypark/apiR/blob/master/docs/img/addressenter.png?raw=true)
 
+---
+class: inverse
+
+## 그럼 서버는
+
+요청하면 주기로 정해진 데이터(ex> 이미지 파일)를 제공
+
+![](https://raw.githubusercontent.com/mrchypark/apiR/master/img/source.png)
 
 
 ---
