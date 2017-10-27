@@ -467,11 +467,10 @@ class: center, middle, title-slide, inverse
 ---
 class: center, middle, title-slide, inverse
 
+---
+class: inverse
 
-nodejs+R-script
-reticulate+flask
-
-openFaaS
+![](https://github.com/mrchypark/apiR/blob/master/docs/img/f.png?raw=true)
 
 ---
 class: inverse
