@@ -37,6 +37,7 @@ class: inverse
   .pull-right[
 &lt;br&gt;
 &lt;br&gt;
+&lt;br&gt;
     ![](https://avatars2.githubusercontent.com/u/6179259?v=4&amp;s=460)
   ]
 ]
@@ -48,7 +49,9 @@ class: inverse
   * [데이터 분석을 위한 중급 R 프로그래밍](http://www.fastcampus.co.kr/data_camp_dabrp/)
 - R 네이버 뉴스 크롤러 [N2H4](https://github.com/forkonlp/N2H4) 관리자
   * [ForkonLP](https://forkonlp.github.io/) 프로젝트
-- .yellow[**KAKAO**]@[알코홀릭](http://pf.kakao.com/_RXANd) R 질문방 운영
+  
+  
+- .yellow[**KAKAO**]@[알코홀릭](http://pf.kakao.com/_RXANd) R 질문방
 - .blue[**FACEBOOK**]@[mrchypark](https://www.facebook.com/mrchypark)
 - .gray[**GITHUB**]@[mrchypark](https://github.com/mrchypark)
 ]
@@ -108,15 +111,15 @@ class: inverse
 
 ---
 class: inverse
-
+.pull-left[
 ## 마이크로 서비스형 설계
 
-.pull-left[
 장점
 
 1. 기능 단위로 완결되어 개발 단위가 작음
 1. 개별 서비스간의 의존성이 적어 유연함
 1. 단일 모듈 장애시 전체 서비스의 영향이 적음
+
 
 단점
 
@@ -124,15 +127,29 @@ class: inverse
 1. 서비스간 인터페이스 정의와 관리 이슈가 발생
 1. 전체 서비스의 로그 관리를 위한 솔루션 필요
 ]
-.pull-right[
+.pull-right[  
+&lt;br&gt;
 ![](https://github.com/mrchypark/apiR/blob/master/docs/img/msa.png?raw=true)
 ]
 
+---
+class: center, middle, title-slide, inverse
+
+## 그럼 이거만 만들 줄 알면 되잖아.
+
+![](https://github.com/mrchypark/apiR/blob/master/docs/img/ms.png?raw=true)
 
 ---
-class: inverse
+class: center, middle, title-slide, inverse
 
-![](https://github.com/mrchypark/apiR/blob/master/docs/img/faas.png?raw=true)
+[![](https://appirio.com/wp-content/uploads/2014/01/docker-logo-300x248.png)](https://www.docker.com/)
+
+## .pen-p[는 사랑입니다.]
+
+---
+class: center, middle, title-slide, inverse
+
+## 그럼 작은 api 서버를 R로 만들어 보자
 
 ---
 class: center, middle, title-slide, inverse
@@ -144,10 +161,27 @@ class: center, middle, title-slide, inverse
 ---
 class: inverse
 
-nodejs+r-script
+
+nodejs+R-script
 reticulate+flask
+
+httpuv
+Rserve
+plumber
+jug
+fiery
+
 openFaaS
-httpuv + was()
+
+
+
+---
+class: inverse
+
+![](https://github.com/mrchypark/apiR/blob/master/docs/img/faas.png?raw=true)
+
+---
+class: center, middle, title-slide, inverse 
 
 ---
 
